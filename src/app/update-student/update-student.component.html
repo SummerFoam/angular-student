@@ -1,0 +1,16 @@
+<p>
+  update-student works!
+</p>
+<div *ngIf="student">
+ <div><span>id:</span>{{student.id}}</div>
+ <div>
+   <label>name:
+     <input [(ngModel)]="student.name" placeholder="name"/>
+   </label>
+   <label>age:
+      <input [(ngModel)]="student.age" placeholder="age"/>
+    </label>
+   <button (click)="goBack()" class="btn btn-primary">返回</button>
+   <button (click)="save()" class="btn btn-danger">保存</button>
+ </div>
+</div>
